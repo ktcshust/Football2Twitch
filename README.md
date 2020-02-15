@@ -1,6 +1,6 @@
 ﻿# Football2Twitch
 
-A chat bot that posts live football results to Twitch.
+A chat bot that posts live football fixtures to Twitch, ideal to improve engagement.
 
 
 ## Status
