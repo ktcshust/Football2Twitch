@@ -18,6 +18,7 @@ def reload():
         'x-rapidapi-key': RAPIDAPI_KEY
         }
 
+    sendMessage(s, 'Live football fixtures:')
     response = requests.request("GET", RAPIDAPI_URL, headers=headers)
     jload = json.loads(response.text)
     jload = jload["api"]["fixtures"]
@@ -34,7 +35,6 @@ def reload():
         print(liveresults)
 
 # SEND FIXTURES TO CHAT #
-        sendMessage(s, 'Live football fixtures:')
         time.sleep(3)
         sendMessage(s, liveresults)
 
